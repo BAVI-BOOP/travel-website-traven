@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? OPEN SANS, Playfair Display FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ? FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Traven</title>
+  </head>
+  <body>
+    <!-- ! HEADER  -->
+    <header>
+      <!--  Mobile Version Sidebar -->
+
+      <button
+        class="btn btn-primary ms-auto text-bg-danger border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <div class="icon">
+            <i class="fa-solid fa-plane mobile-i"></i>
+            <span class="mobile-home">Traven</span>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="mobile-left flexbox">
+            <div>
+              <ul class="flexbox-column mobile-left-ul">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-right flexbox-column">
+            <ul>
+              <i class="fa-solid fa-earth-americas"></i
+              ><select id="cars" name="carlist" form="carform">
+                <option value="eng">English</option>
+                <option value="de">German</option>
+                <option value="tr">Turkish</option>
+                <option value="es">Spanish</option>
+              </select>
+            </ul>
+            <ul>
+              <a href="#" class="sign-in">Sign In</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Version Navbar -->
+      <nav class="flexbox" id="navbar">
+        <div class="nav-left flexbox">
+          <div class="icon">
+            <i class="fa-solid fa-plane"></i> <span class="home">Traven</span>
+          </div>
+          <div>
+            <ul class="flexbox nav-left-ul">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-right flexbox">
+          <ul>
+            <i class="fa-solid fa-earth-americas"></i
+            ><select id="cars" name="carlist" form="carform">
+              <option value="eng">English</option>
+              <option value="de">German</option>
+              <option value="tr">Turkish</option>
+              <option value="es">Spanish</option>
+            </select>
+          </ul>
+          <ul>
+            <a href="#" class="sign-in">Sign In</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="main-title">
+        <h1>Discover Your Life, Travel</h1>
+        <h1>Where You Want</h1>
+      </div>
+      <!-- ? Search Bar -->
+      <div class="search-bar">
+        <div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flight</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ? Search Form -->
+        <div class="search-forms flexbox">
+          <div class="flexbox search-form-element">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <label for="location">Location</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Where are you going?"
+              />
+            </div>
+          </div>
+          <div class="flexbox search-form-element">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>
+              <label for="check-in">Date Of Birth</label>
+              <input
+                type="text"
+                name="check-in"
+                id="check-in"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+                placeholder="05 June 2022"
+              />
+            </div>
+          </div>
+
+          <div class="flexbox search-form-element">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>
+              <label for="check-out">Check out</label>
+              <input
+                type="text"
+                name="check-out"
+                id="check-out"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+                placeholder="08 June 2022"
+              />
+            </div>
+          </div>
+          <div class="flexbox search-form-element">
+            <i class="fa-solid fa-people-pulling"></i>
+            <div>
+              <label for="passengers">Guests</label>
+              <input
+                type="text"
+                name="passengers"
+                id="passengers"
+                placeholder="3 Passengers"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! SCRIPTS -->
+    <!-- ? BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ? JS SCRIPT -->
+    <script src="./app.js"></script>
+  </body>
+</html>

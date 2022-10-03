@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #fff8f0;
+}
+
+select {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.home {
+  font-size: 1.4rem;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-left {
+  gap: 4rem;
+}
+
+.nav-right {
+  gap: 1rem;
+}
+
+ul {
+  list-style: none;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+ul select {
+  border: none;
+  outline: none;
+}
+
+ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-in {
+  padding: 0.6rem;
+  background-color: #ff666f;
+  border-radius: 10%;
+  color: white;
+}
+
+nav {
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 80vw;
+  transform: translateX(12%);
+  height: 4rem;
+  display: block;
+}
+
+.icon i {
+  color: white;
+  background-color: #ff666f;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  margin-top: 0.8rem;
+}
+
+/* ? SIDEBAR */
+
+.btn {
+  display: none;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .btn {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+  }
+}
+
+.offcanvas-body {
+  margin-left: 5rem;
+  font-size: 1.6rem;
+}
+
+.offcanvas-header .mobile-home,
+.mobile-i {
+  font-size: 2.5rem;
+}
+
+.offcanvas-body select {
+  font-size: 1.6rem;
+}
+
+/* ? MAIN */
+
+.main-title {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  transform: translateY(5rem);
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+}
+
+.search-bar {
+  transform: translateY(5rem);
+
+  margin: auto;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  height: 12rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav-item:active {
+  font-weight: bolder;
+}
+
+.search-forms {
+  margin-top: 2rem;
+  gap: 3rem;
+
+}
+
+.search-form-element {
+  width: 20rem;
+}
+
+.search-form-element input {
+  border: none;
+  outline: none;
+}
+
+.search-forms .fa-solid {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: 1.1rem;
+  color: rgb(238, 198, 161);
+}
+
+.search-bar a {
+  color: black;
+  font-weight: bolder;
+}
+
+
+/* ! DATE PICKER */
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+label {
+  display: block;
+}
+
+input {
+  border: 0.5px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
