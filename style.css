@@ -94,9 +94,7 @@ nav {
     display: none;
   }
 
-  .search-forms {
-    flex-direction: column;
-  }
+
 
 }
 
@@ -139,8 +137,16 @@ h1 {
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+@media screen and (max-width: 1000px) {
 
-@media screen and (min-width:900px) {
+
+  .search-forms {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width:1000px) {
   .search-bar{
     height: 12rem;
   }
