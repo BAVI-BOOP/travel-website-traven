@@ -93,6 +93,11 @@ nav {
   #navbar {
     display: none;
   }
+
+  .search-forms {
+    flex-direction: column;
+  }
+
 }
 
 .offcanvas-body {
@@ -125,15 +130,20 @@ h1 {
 
 .search-bar {
   transform: translateY(5rem);
-
   margin: auto;
   width: 75%;
   background-color: rgb(255, 255, 255);
-  height: 12rem;
+  height: 32rem;
   margin-top: 3rem;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width:900px) {
+  .search-bar{
+    height: 12rem;
+  }
 }
 
 .nav-item:active {
