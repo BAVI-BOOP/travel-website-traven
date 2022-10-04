@@ -26,7 +26,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Traven</title>
   </head>
   <body>
@@ -75,7 +75,7 @@
           <div class="mobile-right flexbox-column">
             <ul>
               <i class="fa-solid fa-earth-americas"></i
-              ><select id="cars" name="carlist" form="carform">
+              ><select id="languages" name="languages">
                 <option value="eng">English</option>
                 <option value="de">German</option>
                 <option value="tr">Turkish</option>
@@ -155,11 +155,11 @@
           <div class="flexbox search-form-element">
             <i class="fa-solid fa-calendar-days"></i>
             <div>
-              <label for="check-in">Date Of Birth</label>
+              <label for="checkIn">Check in </label>
               <input
                 type="text"
                 name="check-in"
-                id="check-in"
+                id="checkIn"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
                 placeholder="05 June 2022"
@@ -170,11 +170,11 @@
           <div class="flexbox search-form-element">
             <i class="fa-solid fa-calendar-days"></i>
             <div>
-              <label for="check-out">Check out</label>
+              <label for="checkOut">Check out</label>
               <input
                 type="text"
                 name="check-out"
-                id="check-out"
+                id="checkOut"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
                 placeholder="08 June 2022"
@@ -186,14 +186,45 @@
             <div>
               <label for="passengers">Guests</label>
               <input
-                type="text"
+                type="number"
                 name="passengers"
                 id="passengers"
                 placeholder="3 Passengers"
               />
             </div>
           </div>
+          <div class="search">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="search-results">
+        <!-- <div class="card">
+          <div class="card-top">
+            <p class="hotelName">Hillton Hotel</p>
+          </div>
+          <div class="card-info">
+            <div>Photo</div>
+            <div>Adress</div>
+            <div>Rating</div>
+            <div>Price</div>
+          </div>
+          <div class="card-bottom">
+            <div>
+              <img
+                src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg"
+                alt=""
+                class="photo"
+              />
+            </div>
+            <div><p class="address">Bahçelievler mahallesi 43.sokak</p></div>
+            <div class="rating">4.5</div>
+            <div class="price">14$</div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -205,6 +236,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- ? JS SCRIPT -->
-    <script src="./app.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
