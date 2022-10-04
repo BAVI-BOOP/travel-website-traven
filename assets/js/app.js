@@ -50,8 +50,10 @@ function showResult(event) {
         .then((hotelData) => hotelData.json())
         .then((responseTwo) => {
           console.log(responseTwo);
+          results.innerHTML = "";
           responseTwo.data.body.searchResults.results.forEach((object) => {
-            results.innerHTML += `        <div class="card">
+            results.innerHTML += `        
+            <div class="card">
             <div class="card-top">
               <p class="hotelName">${object.name}</p>
             </div>
