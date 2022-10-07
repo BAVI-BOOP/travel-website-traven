@@ -295,6 +295,16 @@ input {
   margin-right: 2.5rem;
 }
 
+.web-address {
+  font-size: 1.7rem;
+  background-color: rgb(224, 236, 247);
+  padding: 0.5rem;
+  border-radius: 5%;
+  opacity: 0.9;
+  margin-top: 0.8rem;
+
+}
+
 .price {
   font-size: 2rem;
   background-color: rgb(224, 236, 247);
@@ -373,4 +383,11 @@ input {
 #destinationContainer {
   display: flex;
   display: none;
+}
+
+
+.link{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
 }

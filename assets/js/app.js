@@ -115,8 +115,8 @@ function showResult(event) {
       )
       .catch((err) => console.error(err));
   } else if (hotelOrFlight === "flight") {
-    destinationLocation = document.getElementById("destinationInfo");
-    destinationInfo = destinationLocation.value;
+    let destinationLocation = document.getElementById("destinationInfo");
+    let destinationInfo = destinationLocation.value;
     console.log(destinationInfo);
 
     fetch(
@@ -162,9 +162,9 @@ function showResult(event) {
                 </div>
                 <div class="card-bottom">
                   <div>
-                  <a href=https://${airlineUrl} target="_blank">Go to Airline website</a>
+                  <a href=https://${airlineUrl} target="_blank" class='link'><i class="fa-brands fa-google"></i> Go to Airline website</a>
                   </div>
-                  <div><p class="address">From:${arrivalInfo}  </p></div>
+                  <div><p class="web-address">From:${arrivalInfo}  </p></div>
                   <div class="to">To: ${destinationInfo}</div>
                   <div class="price-flight">${responseThree.totalTripSummary.airline[0].lowestTotalFare.amount}$</div>
                 </div>
