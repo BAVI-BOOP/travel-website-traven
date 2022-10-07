@@ -27,9 +27,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Traven</title>
   </head>
-  <body>
+  <body id="page-top">
     <!-- ! HEADER  -->
     <header>
       <!--  Mobile Version Sidebar -->
@@ -66,24 +67,24 @@
           <div class="mobile-left flexbox">
             <div>
               <ul class="flexbox-column mobile-left-ul">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#" lng-tag="About Us">About Us</a></li>
+                <li><a href="#" lng-tag="Support">Support</a></li>
+                <li><a href="#" lng-tag="Blog">Blog</a></li>
               </ul>
             </div>
           </div>
           <div class="mobile-right flexbox-column">
             <ul>
               <i class="fa-solid fa-earth-americas"></i
-              ><select id="languages" name="languages">
+              ><select  name="languages">
                 <option value="eng">English</option>
-                <option value="de">German</option>
-                <option value="tr">Turkish</option>
-                <option value="es">Spanish</option>
+                <option value="de" >German</option>
+                <option value="tr" >Turkish</option>
+                <option value="es" >Spanish</option>
               </select>
             </ul>
             <ul>
-              <a href="#" class="sign-in">Sign In</a>
+              <a href="./html/login.html" class="sign-in">Log in</a>
             </ul>
           </div>
         </div>
@@ -97,24 +98,24 @@
           </div>
           <div>
             <ul class="flexbox nav-left-ul">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" lng-tag="About Us">About Us</a></li>
+              <li><a href="#" lng-tag="Support">Support</a></li>
+              <li><a href="#" lng-tag="Blog">Blog</a></li>
             </ul>
           </div>
         </div>
         <div class="nav-right flexbox">
           <ul>
             <i class="fa-solid fa-earth-americas"></i
-            ><select id="cars" name="carlist" form="carform">
-              <option value="eng">English</option>
-              <option value="de">German</option>
-              <option value="tr">Turkish</option>
-              <option value="es">Spanish</option>
+            ><select id="languages" name="languages" form="langform">
+              <option value="en" id="enTranslate">English</option>
+              <option value="de" id="deTranslate">German</option>
+              <option value="tr" id="trTranslate">Turkish</option>
+              <option value="es" id="esTranslate">Spanish</option>
             </select>
           </ul>
           <ul>
-            <a href="#" class="sign-in">Sign In</a>
+            <a href="./html/login.html" class="sign-in">Log In</a>
           </ul>
         </div>
       </nav>
@@ -122,18 +123,20 @@
 
     <section>
       <div class="main-title">
-        <h1>Discover Your Life, Travel</h1>
-        <h1>Where You Want</h1>
+        <h1 lng-tag="discover">Discover Your Life, Travel</h1>
+        <h1 lng-tag="where">Where You Want</h1>
       </div>
       <!-- ? Search Bar -->
       <div class="search-bar">
         <div>
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs" id="nav-tabs">
             <li class="nav-item">
-              <a class="nav-link" href="#">Hotel</a>
+              <a class="nav-link" id="hotel" href="#" lng-tag="hotel">Hotel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Flight</a>
+              <a class="nav-link" id="flight" href="#" lng-tag="flight"
+                >Flight</a
+              >
             </li>
           </ul>
         </div>
@@ -143,19 +146,19 @@
           <div class="flexbox search-form-element">
             <i class="fa-solid fa-location-dot"></i>
             <div>
-              <label for="location">Location</label>
+              <label for="location" lng-tag="location">Location</label>
               <input
                 type="text"
                 name="location"
                 id="location"
-                placeholder="To Istanbul"
+                placeholder="Istanbul"
               />
             </div>
           </div>
           <div class="flexbox search-form-element">
             <i class="fa-solid fa-calendar-days"></i>
             <div>
-              <label for="checkIn">Check in </label>
+              <label for="checkIn" lng-tag="Check in">Check in </label>
               <input
                 type="text"
                 name="check-in"
@@ -167,24 +170,41 @@
             </div>
           </div>
 
-          <div class="flexbox search-form-element">
-            <i class="fa-solid fa-calendar-days"></i>
-            <div>
-              <label for="checkOut">Check out</label>
-              <input
-                type="text"
-                name="check-out"
-                id="checkOut"
-                onfocus="(this.type='date')"
-                onblur="(this.type='text')"
-                placeholder="08 June 2022"
-              />
+          <div class="flexbox search-form-element" id="checkOutAndDestination">
+            <div id="destinationContainer" class="flexbox">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <label for="destination" lng-tag="Destination"
+                  >Destination</label
+                >
+                <input
+                  type="text"
+                  name="destination"
+                  id="destinationInfo"
+                  placeholder="To London"
+                />
+              </div>
+            </div>
+
+            <div class="flexbox" id="checkoutContainer">
+              <i class="fa-solid fa-calendar-days"></i>
+              <div>
+                <label for="checkOut" lng-tag="Check out">Check out </label>
+                <input
+                  type="text"
+                  name="check-out"
+                  id="checkOut"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  placeholder="05 June 2022"
+                />
+              </div>
             </div>
           </div>
           <div class="flexbox search-form-element">
             <i class="fa-solid fa-people-pulling"></i>
             <div>
-              <label for="passengers">Guests</label>
+              <label for="passengers" lng-tag="Guests">Guests</label>
               <input
                 type="number"
                 name="passengers"
@@ -229,13 +249,22 @@
     </section>
 
     <!-- ! SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- ? BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <!-- ? Translation Scripts -->
+    <script src="./assets/js/ind.js" type="module"></script>
+    <script src="./assets/js/translate.js" type="module"></script>
     <!-- ? JS SCRIPT -->
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js" type="module"></script>
   </body>
 </html>

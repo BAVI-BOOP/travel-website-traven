@@ -1,0 +1,22 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.home {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  text-decoration: none;
+  color: rgb(81, 57, 214);
+  border: 2px solid purple;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.home:hover {
+  background-color: rgb(243, 210, 243);
+}
