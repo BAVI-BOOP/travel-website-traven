@@ -20,3 +20,26 @@
  .about-section {
     height: 100vh;
  }
+
+ .home {
+   position: absolute;
+   top: 1.5rem;
+   left: 1.5rem;
+   text-decoration: none;
+   color:rgba(49, 49, 49, 0.89);
+   border: 2px solid purple;
+   padding: 1rem;
+   font-size: 20px;
+ }
+.home:hover {
+ background-color: rgb(243, 210, 243);
+ z-index: 2;
+ color: black;
+
+}
+
+@media screen and (max-width: 730px) {
+ .home {
+   visibility: hidden;
+ }
+}
