@@ -68,4 +68,4 @@ languages.addEventListener("change", (event) => {
 
 let body = document.querySelector("body");
 
-body.addEventListener("load", translate("de", "lng-tag"));
+body.addEventListener("load", translate("en", "lng-tag"));

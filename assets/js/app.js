@@ -16,6 +16,8 @@ const flightOptions = {
   },
 };
 
+let loader = document.querySelector(".loader");
+
 let hotel = document.getElementById("hotel");
 let flight = document.getElementById("flight");
 let navTabs = document.getElementById("nav-tabs");
@@ -63,6 +65,7 @@ let hotelName = document.querySelector(".hotelName");
 
 function showResult(event) {
   event.preventDefault();
+  loader.style.visibility = "visible";
 
   let arrivalInfo = arrival.value;
   let checkInInfo = checkIn.value;
@@ -84,6 +87,7 @@ function showResult(event) {
           .then((responseTwo) => {
             console.log(responseTwo);
             results.innerHTML = "";
+            loader.style.visibility ='hidden'
             responseTwo.data.body.searchResults.results.forEach((object) => {
               results.innerHTML += `        
               <div class="card">
@@ -148,7 +152,9 @@ function showResult(event) {
                 let airlineUrl = airlineObject.websiteUrl;
                 console.log(code);
                 console.log(responseThree);
+
                 results.innerHTML = "";
+                loader.style.visibility ='hidden';
                 results.innerHTML = `
                 <div class="card">
                 <div class="card-top">

@@ -20,3 +20,9 @@
 .home:hover {
   background-color: rgb(243, 210, 243);
 }
+
+@media screen and (max-width: 730px) {
+  .home {
+    visibility: hidden;
+  }
+}
