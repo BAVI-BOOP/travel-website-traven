@@ -76,4 +76,3 @@ The aim of this project is to make hotel and flight reservations from different 
 - Author - [Ahmet]
 
 <center> &#8987; Happy Coding  &#9997; </center>
-LIVE DEMO: https://bavi-boop.github.io/travel-website-traven/
