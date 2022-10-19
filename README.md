@@ -18,11 +18,11 @@
 
 ## The challenge
 The aim of this project is to make hotel and flight reservations from different parts of the world using two different APIs.The website can be translated in 4 languages and İt is multipage. You can go to links in navbar
--
-<a href="https://rapidapi.com/davidtaoweiji/api/priceline-com">Priceline API <a/>
--
-<a href="https://rapidapi.com/apidojo/api/hotels4/">Hotels API <a/>
 
+<ul>
+  <li><a href="https://rapidapi.com/davidtaoweiji/api/priceline-com">Priceline API <a/></li>
+  <li><a href="https://rapidapi.com/apidojo/api/hotels4/">Hotels API <a/></li>
+</ul>
 
 ## Project Skeleton 
 
